@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>前端路由演示</title>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="#/">Home</a>
+    </li>
+    <li>
+      <a href="#/about">About</a>
+    </li>
+    <li>
+      <a href="#/topics">Topic</a>
+    </li>
+  </ul>
+
+  <div id="main">
+  </div>
+
+  <script src="./router.js"></script>
+  <script>
+    var Home = function() {
+      document.getElementById('main').innerText = 'Home';
+    }
+
+    var About = function() {
+      document.getElementById('main').innerText = 'About';
+    }
+
+    var Topics = function() {
+      document.getElementById('main').innerText = 'Topic';
+    }
+
+    var router = new Router();
+
+    router.route('/', Home);
+    router.route('/about', About);
+    router.route('/topics', Topics);
+
+  </script>
+</body>
+</html>
