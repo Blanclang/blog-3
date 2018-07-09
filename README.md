@@ -19,4 +19,4 @@
 ### 闲来无事
 
   - [终极实战(一) - 搞个 Node 的数据服务](https://github.com/mintsweet/blog/issues/2)
-  - 终极实战(二) - 用 Pug 模板输出传统网站
+  - [终极实战(二) - 用 Pug 模板输出传统网站](https://github.com/mintsweet/blog/issues/3)
